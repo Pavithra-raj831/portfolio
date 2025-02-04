@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Pavithra</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills & Expertise</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Pavithra</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills & Expertise</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/paviprofile.png" alt="Pavithra profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello,I'm</p>
+            <h1 class="title">Pavithra R</h1>
+            <p class="section__text__p2">Full Stack Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2"
+                onclick="window.open('./assets/pavithraresume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'"> Contact Info</button>
+            </div>
+            <div id="social-container"><br/>
+                <img src="./assets/linkedin.png" alt="My Linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/pavithra-rajan-a4780323b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app '"/>
+                <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/Pavithra-raj831 '"/>
+                
+
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img src="./assets/paviabout.jpg" alt="Profile picture" class="about-pic"/>
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img src="./assets/experience.png" alt="Experience icon" class="icon"/>
+                <h3>Designation</h3>
+                <p>Full Stack Development</p>
+              </div>
+              <div class="details-container">
+                <img src="./assets/education.png" alt="Education icon" class="icon"/>
+                <h3>Education</h3>
+                <p>Bachelor of Technology<br />In<br/>Information Technology</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                Motivated student ready to apply education in the workplace. Skilled
+                Developer Programmer proficient in Java, SQL, C, and Python, with strengths
+                in debugging, code optimization, and scalable application development.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img src="./assets/arrow.png"alt="Arrow icon"class="icon arrow" onclick="location.href='#skills'"/>
+      </section>
+
+      <section id="skills">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Skills & Expertise</h1>
+        <div class="skills-details-container">
+          <div class="about-containers">
+            
+            <!-- Programming Languages -->
+            <div class="details-container">
+              <h2 class="skills-sub-title">Programming Languages</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                  <div>
+                    <h3>Java</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                  <div>
+                    <h3>Python</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                  <div>
+                    <h3>C</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+      
+            <!-- Web Technologies -->
+            <div class="details-container">
+              <h2 class="skills-sub-title">Web Technologies</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                  <div>
+                    <h3>Node.js</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+    
+                <article>
+                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                  <div>
+                    <h3>PostgreSQL</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+      
+            <!-- Tools & Other Skills -->
+            <div class="details-container">
+              <h2 class="skills-sub-title">Tools & Other Skills</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                  <div>
+                    <h3>Git</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                  <div>
+                    <h3>VS Code</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                  <div>
+                    <h3>LeetCode & HackerRank</h3>
+                    <p>Problem-Solving</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+      
+            <!-- Internships & Certifications -->
+            <div class="details-container">
+              <h2 class="skills-sub-title">Internships & Certifications</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/internship.png" alt="Internship icon" class="icon" />
+                  <div>
+                    <h3><a href="https://drive.google.com/file/d/1M2Q2jUyhHlkI99IQUJj0cDKHAJCZK3Ws/view?usp=drivesdk " target="_blank">CodSoft Java Internship</a></h3>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                  <div>
+                    <h3>C- HackerRank</h3>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                  <div>
+                    <h3>Java - HackerRank</h3>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                  <div>
+                    <h3>Python - HackerRank</h3>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                  <div>
+                    <h3>Problem Solving - HackerRank</h3>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                  <div>
+                    <h3>SQL - HackerRank</h3>
+                  </div>
+                </article>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      
+        <!-- Arrow icon linking to Projects Section -->
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='#projects'"
+        />
+      </section>
+      
+      
+        
+     
+
+      <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/project1.png"  alt="Project1" class="project-img"/>
+              </div>
+              <h2 class="experience-sub-title project-title">virtual-assistant</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Pavithra-raj831/virtual-assistant'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://pavithra-raj831.github.io/virtual-assistant/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Restaraunts</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Pavithra-raj831/restaraunts/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://pavithra-raj831.github.io/restaraunts/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project3.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Portfolio</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://naveenrajmc.github.io/portfolio//'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='#contact'"
+        />
+      </section>
+
+      <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+            <p><a href="mailto:pavithraraj831@gmail.com">pavithraraj831@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+            <p><a href="https://www.linkedin.com/in/pavithra-rajan-a4780323b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills & Expertise</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2025 PavithraR. All Rights Reserved.</p>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
